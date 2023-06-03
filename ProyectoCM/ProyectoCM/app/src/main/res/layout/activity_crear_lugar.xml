@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearLugarActivity"
+    android:background="@color/simplebackgroundcolor">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="600px"
+        android:layout_height="600px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/camara" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:text="crear Lugar"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"/>
+
+    <EditText
+        android:id="@+id/nuevoNombre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        android:hint="nombre"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F8F8F8" />
+
+    <EditText
+        android:id="@+id/nuevaDireccion"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:hint="direccion"
+        android:inputType="textPassword"
+        android:textColor="#B56106"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nuevaDireccion"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="83dp"
+        android:onClick="onclick"
+        android:text="Crear" />
+
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="46dp"
+        android:text="Tomar Fotografia" />
+
+
+</RelativeLayout>
